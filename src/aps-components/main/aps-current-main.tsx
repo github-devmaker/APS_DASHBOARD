@@ -3,7 +3,7 @@ import React from 'react'
 
 function ApsCurrentMain() {
     return (
-        <div className='col-span-3 rounded-md shadow-md pt-3 px-4 flex  flex-col gap-3  bg-black/90 text-white/90 '>
+        <div className='col-span-3 rounded-md shadow-md pt-3 px-4 flex  flex-col gap-3  bg-[#1e1f23] text-white/90 '>
             <div className='flex justify-between w-full'>
                 <button type="button" className="inline-flex items-center  font-semibold leading-6 text-sm shadow rounded-md text-white transition ease-in-out duration-150 ">
                     <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ function ApsCurrentMain() {
                 <div className=' p-3  rounded-xl bg-white/10 shadow-lg  flex-1'>
                     <div>RESULT</div>
                     <div className='text-end gap-1 items-end leading-none  w-full'>
-                        <span className='text-[3.25em] text-[#96CBFB]'>456</span>
+                        <span className='text-[3.25em] text-[#26f0cb]'>456</span>
                     </div>
                     <div className='text-end'>
                         <span className='opacity-35 text-sm'>From Gastight</span>
@@ -57,7 +57,7 @@ function ApsCurrentMain() {
                 <div className=' p-3  rounded-xl bg-white/15 shadow-lg ring-1 ring-black/5 '>
                     <span>DIFF</span>
                     <div className='flex gap-1 items-end leading-none '>
-                        <span className='text-[3.25em] text-red-400 '>125</span>
+                        <span className='text-[3.25em] text-[#f27475] '>125</span>
                     </div>
                     <div className='text-end'>
                         <span className='opacity-35 text-sm'>Remaining</span>

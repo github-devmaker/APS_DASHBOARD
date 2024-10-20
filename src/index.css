@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities; 
 
-div#aps-ds #tag-main *,
+div#aps-ds #tag-main table *,
 div#aps-ds #tag-subline table * {
-  font-size: x-small;
+  font-size: small;
 }
 table#tbMain thead * {
-  font-weight: bold;
+  font-weight: 600;
 }
 table#tbMain td {
-  border : 1px solid rgb(221, 221, 221);
-  border-collapse: collapse;
+  /* border:none; */
+  /* border : 1px solid rgb(221, 221, 221); */
+  /* border-collapse: collapse; */
 }
 table#tbMain thead td ,
 tr.current td{
-  border: 1px solid rgba(209, 209, 209, 0.527);
+  /* border: 1px solid rgba(209, 209, 209, 0.527); */
 }
 tr.current td {
   border-color:rgb(116, 116, 116);

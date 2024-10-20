@@ -2,10 +2,10 @@ import React from 'react'
 
 function ApsTableMain() {
     return (
-        <div className='col-span-6' id='tag-main'>
-            <div className='flex flex-col  gap-2 border rounded-md p-3 shadow-md'>
-                <div>
-                    <span className='text-[3em]  text-black font-semibold'>Main Sequence</span>
+        <div className='col-span-6 bg-' id='tag-main'>
+            <div className='flex flex-col  gap-2 border rounded-md p-3 shadow-md bg-[#1e1f23] text-white'>
+                <div className='pl-5'>
+                    <span className='text-[1.25em] font-semibold'>Main Sequence</span>
                 </div>
                 <div className='flex flex-row '>
                     <table className='h-[100%] tb-border tb-border-transparent'>
@@ -36,21 +36,20 @@ function ApsTableMain() {
                             }
                         </tbody>
                     </table>
-                    <table id='tbMain' className='w-full border border-black/40'>
-                        <thead className='bg-blue-500 text-white drop-shadow-md'>
+                    <table id='tbMain' className='w-full bg-[#181a1e] border border-[#181a1e] shadow-lg backdrop-blur-lg'>
+                        <thead className='bg-white/15 backdrop-blur-lg shadow-lg text-white'>
                             <tr>
-                                <td rowSpan={2} >Seq.</td>
-                                <td rowSpan={2}>Model</td>
-                                <td colSpan={2} className='text-center'>Plan</td>
+                                <td rowSpan={2} className='text-center'>Seq.</td>
+                                <td rowSpan={2} colSpan={2} className='text-center'>Model</td>
+                                <td colSpan={2} className='text-center py-1 border-[#181a1e]'>Plan</td>
                                 <td rowSpan={2} className='text-center'>Time</td>
                                 <td colSpan={4} className='text-center'>Machine</td>
                                 <td colSpan={3} className='text-center'>Casing</td>
                                 <td colSpan={2} className='text-center'>Motor</td>
                             </tr>
                             <tr>
-
-                                <td>Result</td>
-                                <td>Remain</td>
+                                <td className='text-center py-1'>Result</td>
+                                <td className='text-center'>Remain</td>
                                 <td className='text-center'>CrankShaft</td>
                                 <td className='text-center'>Housing</td>
                                 <td className='text-center'>Lower</td>
@@ -66,21 +65,27 @@ function ApsTableMain() {
                             {
                                 ['1YC0123456', '2YC0123456', '3YC0123456', '4YC0123456', '5YC0123456', '6YC0123456', '7YC0123456', '8YC0123456', '9YC0123456', '10YC0123456'].map((item, index) => {
                                     return (
-                                        <tr key={index} className={`${index < 2 && 'opacity-40 bg-black/10'} ${index == 2 && 'bg-yellow-400/40 border-black shadow-md font-bold current'} ${index == 3 && 'bg-sky-600/20 shadow-md font-semibold'} ${index > 3 && 'opacity-70'}`}>
+                                        <tr key={index} className={`${index < 2 && 'opacity-60 bg-black/10'} ${index == 2 && 'bg-[#fec301] text-black border-black shadow-md font-bold current'} ${index == 3 && 'bg-sky-600/45 shadow-md font-semibold'} ${index > 3 && 'opacity-60'}`}>
                                             <td className='text-center'>{index + 1}</td>
-                                            <td>{item}</td>
-                                            <td className={`text-end pr-1 font-semibold ${index < 2 ? 'text-green-700' : 'text-blue-700/90'}`}>100</td>
-                                            <td className='text-end pr-1 font-bold text-red-600/80'>100</td>
-                                            <td>09:00</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
-                                            <td className='text-center'>123456</td>
+                                            <td className={`${index >= 2 && 'bg-white/10 '} text-center`}>7559</td>
+                                            <td className='pl-2'>{item}</td>
+                                            <td className={`text-end pr-1 font-semibold bg-white/10 `}>
+                                                <span className={` ${index == 2 ? 'bg-white/80 backdrop-blur-lg drop-shadow-xl rounded-sm px-[4px] ' : 'text-[#26f0cb]'}`}>100</span>
+                                            </td>
+                                            <td className='text-end pr-1 font-bold '>
+                                                <span className={` ${index == 2 ? 'bg-red-600/80 backdrop-blur-lg drop-shadow-xl rounded-sm px-[4px] text-white' : ''}`}>{index >= 2 && '100'}</span>
+
+                                            </td>
+                                            <td className='text-center'>09:00</td>
+                                            <td className={`text-end`}>1,259</td>
+                                            <td className={`text-end`}>1,259</td>
+                                            <td className={`text-end`}>1,259</td>
+                                            <td className={`text-end bg-red-500/75`}>1,259</td>
+                                            <td className={`text-end`}>1,259</td>
+                                            <td className={`text-end`}>1,259</td>
+                                            <td className={`text-end`}>1,259</td>
+                                            <td className={`text-end`}>1,259</td>
+                                            <td className={`text-end`}>1,259</td>
                                         </tr>
                                     )
                                 })
