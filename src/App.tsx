@@ -19,8 +19,9 @@ function App() {
         </div>
       </div>
       <div className='grid grid-cols-9 gap-3 px-3'>
-        <ApsTableMain />
         <ApsCurrentMain />
+        <ApsTableMain />
+
       </div>
       <div className='px-3 '>
         <div className='flex flex-col  border rounded-md shadow-md p-3 gap-3'>
