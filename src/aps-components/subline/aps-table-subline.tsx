@@ -2,8 +2,8 @@ import React from 'react'
 
 function ApsTableSubline() {
     return (
-        <table id='tbSubline' className='w-full'>
-            <thead>
+        <table id='tbSubline' className='w-full  bg-[#181a1e] border border-[#181a1e] shadow-lg backdrop-blur-lg '>
+            <thead className='bg-white/15 backdrop-blur-lg shadow-lg text-white'>
                 <tr>
                     <td colSpan={3} className='text-center w-[120px]'>Main sequence</td>
                     <td colSpan={2} className='text-center w-[80px]'>Plan</td>
@@ -48,15 +48,15 @@ function ApsTableSubline() {
                                 <td className='align-top text-end pr-1'>100</td>
                                 <td className='align-top text-end pr-1 font-bold'>100</td>
                                 <td className='align-top text-center'>09:00</td>
-                                <td className={`align-top text-center ${index % 1 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 2 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 3 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 4 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 5 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 6 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 7 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 8 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
-                                <td className={`align-top text-center ${index % 9 == 0 ? 'bg-red-50 text-red-500' : 'bg-green-100'}`}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
+                                <td className={`align-top text-center `}>123456</td>
                             </tr>
                         )
                     })

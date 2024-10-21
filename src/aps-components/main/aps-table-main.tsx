@@ -2,13 +2,13 @@ import React from 'react'
 
 function ApsTableMain() {
     return (
-        <div className='col-span-6 bg-' id='tag-main'>
-            <div className='flex flex-col  gap-2 border rounded-md p-3 shadow-md bg-[#1e1f23] text-white'>
-                <div className='pl-5'>
+        <div className='col-span-6 border rounded-md  border-[#eab308]/50 ' id='tag-main'>
+            <div className='flex flex-col  gap-2  rounded-md p-3 shadow-md bg-[#1e1f23] text-white'>
+                <div className='pl-1'>
                     <span className='text-[1.25em] font-semibold'>Main Sequence</span>
                 </div>
                 <div className='flex flex-row '>
-                    <table className='h-[100%] tb-border tb-border-transparent'>
+                    {/* <table className='h-[100%] tb-border tb-border-transparent'>
                         <tbody>
                             <tr>
                                 <td >&nbsp;</td>
@@ -35,7 +35,7 @@ function ApsTableMain() {
                                 })
                             }
                         </tbody>
-                    </table>
+                    </table> */}
                     <table id='tbMain' className='w-full bg-[#181a1e] border border-[#181a1e] shadow-lg backdrop-blur-lg'>
                         <thead className='bg-white/15 backdrop-blur-lg shadow-lg text-white'>
                             <tr>
